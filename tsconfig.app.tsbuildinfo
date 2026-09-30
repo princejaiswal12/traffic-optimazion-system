@@ -1,0 +1,1 @@
+{"root":["./src/App.tsx","./src/main.tsx","./src/types.ts","./src/components/Sidebar.tsx","./src/components/TrafficCanvas.tsx","./src/components/VehicleShape.tsx","./src/model/network.ts","./src/simulation/engine.ts"],"errors":true,"version":"5.8.3"}
