@@ -21,7 +21,12 @@ export class TrafficSimulationEngine {
     };
   }
 
-  subscribe(listener: (state: SimulationState) => void) { this.listeners.add(listener); return () => this.listeners.delete(listener); }
+  subscribe(listener: (state: SimulationState) => void) {
+    this.listeners.add(listener);
+    return () => {
+      this.listeners.delete(listener);
+    };
+  }
   getState() { return this.state; }
   private emit() { for (const listener of this.listeners) listener(this.state); }
 
